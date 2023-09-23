@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Services List</title>
+</head>
+<body>
+    <h1>Services List</h1>
+    <ul>
+        {% for Service in Services %}
+            <li>Name: {{ Service.Service_name }}, Short_Description: {{ Service.Short_Description }}</li>
+        {% endfor %}
+    </ul>
+    <h1>Products List</h1>
+    <ul>
+        {% for Product in Products %}
+            <li>Name: {{ Product.Service_name }}, Short_Description: {{ Product.Short_Description }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
